@@ -1,11 +1,11 @@
 # Empirical Properties of Diversion Ratios
 Conlon and Mortimer (2020)
-A copy of the paper is here: 
+A copy of the paper is here: https://chrisconlon.github.io/site/diversion.pdf
 
 ## Before running code
 To download the repo simply type:
 
-    git clone https://github.com/chrisconlon/[FILENAME_HERE]
+    git clone https://github.com/chrisconlon/DiversionRevision
 
 ### Dataset Size and Memory
 1. Total runtime on a 2017 MacBook Air with iMac with 8GB of RAM is around three hours.
@@ -33,7 +33,6 @@ Windows Users: instead use "run_all.bat" from the command prompt.
 
 
 ## Within-File Dependencies:
- 
 
 run_all_cases.py
     
@@ -74,6 +73,7 @@ Python (version 3.4 or above) - install dependencies with
 
     numpy, pandas, matplotlib, scipy, tabulate
 
+Note: Windows 10 has trouble with older versions of Python 3 and multiprocessing (unrelated to this project). Please use 3.7.7 or above.
 
 ## Files Provided
 
