@@ -1,0 +1,136 @@
+
+\documentclass[6pt,twoside]{article}
+\usepackage[left=0.5in, right=0.5in, top=1in, bottom=1in]{geometry}
+
+\usepackage{xstring}
+\usepackage{amsmath}
+\usepackage[american]{babel}
+\usepackage{multicol}
+\usepackage{multirow}
+
+\usepackage{tabulary}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage[titles]{tocloft}
+\usepackage{titling}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{mathabx}
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+
+
+\begin{document}
+
+
+\begin{table}[htp]
+\footnotesize
+\caption*{Table 3: Parameter Estimates for Berry et al. (1999) and Nevo (2000b)}
+\begin{center}
+\input{tab3_params.tex}
+\end{center}
+
+\end{table}%
+
+
+
+\begin{table}[htp]
+\footnotesize
+\caption*{Table 4: Comparison of Diversion and Elasticities for Berry et al. (1999) and Nevo (2000b)}
+\begin{center}
+\input{tab4_stats.tex}
+\end{center}
+\end{table}%
+
+
+
+\begin{table}[htp]
+\footnotesize
+\caption*{Table 5: Diversion to Best Substitute and Outside Good}
+\begin{center}
+\input{tab5_div.tex}
+\end{center}
+\end{table}%
+
+
+\begin{table}[htp]
+\footnotesize
+\caption*{Table 6: Relative \% Difference in Diversion Measures}
+\begin{center}
+\input{tab6_rel.tex}
+\end{center}
+\end{table}
+
+
+
+\begin{figure}[htbp]
+\begin{center}
+\caption*{Figure 1: Decomposition of Diversion Measures for Honda Accord}
+\includegraphics[width=0.5\textwidth]{../figures/lines_mte_53_113_19.pdf}
+\includegraphics[width=0.5\textwidth]{../figures/hist_mte_53_113_19.pdf}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\begin{center}
+\caption*{Figure 2: Decomposition of Diversion Measures for BMW 5-Series}
+\includegraphics[width=0.5\textwidth]{../figures/lines_mte_8_9_113.pdf}
+\includegraphics[width=0.5\textwidth]{../figures/hist_mte_8_9_113.pdf}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\caption*{Figure 3: Local Average Diversion Measures from Accord to Camry and Deville}
+\includegraphics[width=0.5\textwidth]{../figures/late_53_113.pdf}
+\includegraphics[width=0.5\textwidth]{../figures/late_53_19.pdf}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\caption*{Figure 4: Local Average Diversion Measures from BMW 5-Series to 7-Series and Accord}
+\includegraphics[width=0.5\textwidth]{../figures/late_8_9.pdf}
+\includegraphics[width=0.5\textwidth]{../figures/late_8_113.pdf}
+\end{center}
+\end{figure}
+
+
+
+
+\begin{table}[htp]
+\footnotesize
+\caption*{Table B1: Pairwise Correlation Among Treatment Effects Parameters}
+\caption*{\textbf{BLP Auto Data}}
+\begin{center}
+\input{tabB1_blp.tex}\\
+\caption*{\textbf{Nevo (Fake) Cereal Data}}
+\input{tabB1_nevo.tex}
+\end{center}
+\end{table}%
+
+\footnotesize{
+\input{tab7_wtp.tex}}
+
+\clearpage
+\begin{figure}[htbp]
+\begin{center}
+\caption*{Figure B.2: Density of $\alpha_i$ for BLP (Blue) and Nevo (Red) Data}
+\includegraphics[width=\textwidth]{../figures/hist_alpha.pdf}
+\end{center}
+\end{figure}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+\end{document}

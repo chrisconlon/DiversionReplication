@@ -3,6 +3,11 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# General Mac Nonsense
+.DS_Store
+.AppleDouble
+.LSOverride
+
 # C extensions
 *.so
 
@@ -123,3 +128,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# No Tables/Figures
+figures/*.pdf
+tables/*
+!tables/wrapper.tex
+
+# No temp data
+data/dict/*.npy
