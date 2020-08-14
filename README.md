@@ -19,17 +19,17 @@ Windows Users: instead use "run_all.bat" from the command prompt.
 
 ## File of origin for tables and figures
 
-| Table / Figure Number                 || Generating File           || File Name                    |
-| ------------------------------------- || ------------------------- || ---------------------------- |
-| Table 1                               || (by hand)                 || N/A                          |
-| Table 2                               || (by hand)                 || N/A                          |
-| Table 3                               || tab34_params.py           || tab3_params.tex              |
-| Table 1                               || tab34_params.py           || tab4_stats.tex               |
-| Table 1                               || tab56_diversion.py        || tab5_div.tex                 |
-| Table 1                               || tab56_diversion.py        || tab6_rel.tex                 |
-| Table 1                               || tab7_wtp.py               || tab7_wtp.tex                 |
-| Table B1, Panel A                     || tab34_params.py           || tableB1_blp.tex              |
-| Table B1, Panel B                     || tab34_params.py           || tableB1_nevo.tex             |
+| Table / Figure Number                 | Generating File           | File Name                    |
+| ---                                   | ---                       | ---                          |
+| Table 1                               | (by hand)                 | N/A                          |
+| Table 2                               | (by hand)                 | N/A                          |
+| Table 3                               | tab34_params.py           | tab3_params.tex              |
+| Table 1                               | tab34_params.py           | tab4_stats.tex               |
+| Table 1                               | tab56_diversion.py        | tab5_div.tex                 |
+| Table 1                               | tab56_diversion.py        | tab6_rel.tex                 |
+| Table 1                               | tab7_wtp.py               | tab7_wtp.tex                 |
+| Table B1, Panel A                     | tab34_params.py           | tableB1_blp.tex              |
+| Table B1, Panel B                     | tab34_params.py           | tableB1_nevo.tex             |
 
 
 ## Within-File Dependencies:
