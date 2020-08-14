@@ -5,7 +5,7 @@ A copy of the paper is here: https://chrisconlon.github.io/site/diversion.pdf
 ## Before running code
 To download the repo simply type:
 
-    git clone https://github.com/chrisconlon/DiversionRevision
+    git clone https://github.com/chrisconlon/DiversionReplication
 
 ### Dataset Size and Memory
 1. Total runtime on a 2015 iMac with 64GB of RAM is around 40 minutes. 
