@@ -8,7 +8,8 @@ To download the repo simply type:
     git clone https://github.com/chrisconlon/DiversionRevision
 
 ### Dataset Size and Memory
-1. Total runtime on a 2017 MacBook Air with iMac with 8GB of RAM is around three hours.
+1. Total runtime on a 2015 iMac with 64GB of RAM is around 40 minutes. 
+Runtime on a 2017 MacBook Air with iMac with 8GB of RAM is around three hours.
 2. All of the datasets saved should take up less than 120 MB of drive space.
 3. The file run_all_cases.py need only be run once to populate data/dict. The file takes about 2.5 hours to run.
 
@@ -79,7 +80,5 @@ Note: Windows 10 has trouble with older versions of Python 3 and multiprocessing
 
 data/raw:
 
-1. blp_product_data_opt.parquet: BLP auto data corrected using optimal instruments. See Conlon and Gortmaker (2020) for a detailed discussion.
-2. nevo_product_data_opt.parquet: Nevo (fake) cereal data corrected using optimal instruments. See Conlon and Gortmaker (2020) for a detailed discussion.
-
-
+1. blp_product_data_opt.parquet: BLP auto data corrected using pre-computed optimal instruments. See Conlon and Gortmaker (2020) for a detailed discussion.
+2. nevo_product_data_opt.parquet: Nevo (fake) cereal data corrected using pre-computed optimal instruments. See Conlon and Gortmaker (2020) for a detailed discussion.
