@@ -71,7 +71,7 @@ Python (version 3.4 or above) - install dependencies with
 
     pip3 install -r requirements.txt
 
-    numpy, pandas, matplotlib, scipy, tabulate
+    numpy, pandas, matplotlib, scipy, tabulate, pyarrow, brotli
 
 Note: Windows 10 has trouble with older versions of Python 3 and multiprocessing (unrelated to this project). Please use 3.7.7 or above.
 
