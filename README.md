@@ -8,8 +8,8 @@ To download the repo simply type:
     git clone https://github.com/chrisconlon/DiversionReplication
 
 ### Dataset Size and Memory
-1. Total runtime on a 2015 iMac with 64GB of RAM is around 40 minutes. 
-Runtime on a 2017 MacBook Air with iMac with 8GB of RAM is around three hours.
+1. Total runtime on a 2015 i7 iMac with 64GB of RAM is around 40 minutes. 
+Runtime on a 2017 MacBook Air with 8GB of RAM is around three hours.
 2. All of the datasets saved should take up less than 120 MB of drive space.
 3. The file run_all_cases.py need only be run once to populate data/dict. The file takes about 2.5 hours to run.
 
