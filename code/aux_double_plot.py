@@ -101,21 +101,21 @@ def plot_double_mpc(results, product_df, mkt_id, j_id, k_id1, k_id2, PARAMS_INT,
     
     
     ## Plot the histogram 
-    fig1, ax1 = plt.subplots(figsize=(20, 20))
+    fig1, ax1 = plt.subplots(figsize=(15, 15))
         ## Plot the Histograms
     
     hist1 = ax1.hist(x_bins[0:50], bins=x_bins[0:50], weights= mpc_cut, 
-             facecolor='blue',alpha=0.25, label = MPC_TEXT,
+             facecolor='navy', hatch="\\", alpha=0.7, label = MPC_TEXT,
              zorder = 0)
     hist2 = ax1.hist(x_bins[0:50], bins=x_bins[0:50], weights= sc_cut, 
-             facecolor='red',alpha=0.25, label = SC_TEXT,
+             facecolor='maroon',hatch='/', alpha=0.5, label = SC_TEXT,
              zorder = 1)
     
 
     ax1.set_xlim((-0.0001,None))
     ax1.set_ylim((0,None))    
     ax1.set_ylabel("Weighting")
-    ax1.set_xlabel('$Pr(v_i < P(z))= s_{ij}$ for '+j_lab )
+    ax1.set_xlabel('Individual $s_{ij}$ for '+j_lab )
     ax1.yaxis.set_label_position("right")
     ax1.yaxis.tick_right()
     handles_ax1, labels_ax1 =  ax1.get_legend_handles_labels()
@@ -134,7 +134,7 @@ def plot_double_mpc(results, product_df, mkt_id, j_id, k_id1, k_id2, PARAMS_INT,
         
    # LINES/SCATTERPLOT second
     
-    fig2, ax2 = plt.subplots(figsize=(20, 20))
+    fig2, ax2 = plt.subplots(figsize=(15, 15))
     line1 = ax2.hlines(y=diversion[j_id,k_id1],xmin=x_sort.min(),xmax=x_sort.max(),
                linestyle='dotted',color='gray', linewidth=5, 
                label = k_lab1 + ' (Small Change) ',
@@ -155,18 +155,18 @@ def plot_double_mpc(results, product_df, mkt_id, j_id, k_id1, k_id2, PARAMS_INT,
                zorder = 2)
 
     # Scatter plot last
-    scatl1, = ax2.plot(x_g, y1_g, color='blue', zorder = 1,
+    scatl1, = ax2.plot(x_g, y1_g, color='gray', zorder = 1,
                      linewidth = 5,
                        label = '$D_{jk,i}$ to ' + k_lab1)
     
-    scatl2, = ax2.plot(x_g, y2_g, color='green', zorder = 1,
-                     linewidth = 5,
+    scatl2, = ax2.plot(x_g, y2_g, color='black', zorder = 1,
+                     linewidth = 5, 
                        label = '$D_{jk,i}$ to ' + k_lab2)
 
-    scat1 = ax2.scatter(x_sort, y1_sort, color='blue',zorder = 4)
+    scat1 = ax2.scatter(x_sort, y1_sort, color='gray', marker='s', zorder = 4)
                       
                       
-    scat2 = ax2.scatter(x_sort, y2_sort, color='green', zorder = 4)
+    scat2 = ax2.scatter(x_sort, y2_sort, color='black', marker='v', zorder = 4)
                    
     
     
@@ -174,7 +174,7 @@ def plot_double_mpc(results, product_df, mkt_id, j_id, k_id1, k_id2, PARAMS_INT,
     ax2.set_xlim((-0.0001,None))    
     ax2.set_ylim((0,None))        
     ax2.set_ylabel("Diversion Ratios")
-    ax2.set_xlabel('$Pr(v_i < P(z))= s_{ij}$ for '+j_lab )    
+    ax2.set_xlabel('Individual $s_{ij}$ for '+j_lab )    
     ax2.yaxis.set_label_position("right") #changed from left
     ax2.yaxis.tick_right() # changed from left
     handles_ax2, labels_ax2 =  ax2.get_legend_handles_labels()

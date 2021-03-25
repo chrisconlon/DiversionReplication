@@ -249,23 +249,23 @@ def plot_late_single(results, products, mkt, j, k, savepath, savename=None):
         
     ## FINALLY, make the plot itself!
     #plt.clf()
-    fig, ax = plt.subplots(figsize=(20,20))
+    fig, ax = plt.subplots(figsize=(10,15))
     # blue line: price changes
-    ax.plot(df_wald_price.change, df_wald_price.wald, 'b', label='Price')
+    ax.plot(df_wald_price.change, df_wald_price.wald, color='black', linestyle='-', label='Price')
     # blue dots: 5% and 10%
-    ax.plot(df_points_price.change, df_points_price.wald, 'b.', mew=10, ms = 10)
+    ax.plot(df_points_price.change, df_points_price.wald, color='black',marker='.', mew=10, ms = 10)
     # red line: quality changes
-    ax.plot(df_wald_delta.change, df_wald_delta.wald, 'r', label='Quality')
+    ax.plot(df_wald_delta.change, df_wald_delta.wald, color='black',linestyle='-.',label='Quality')
     # single line for the ATE
-    ax.hlines(ate_jk, 0, 1, ls='--', label='Second Choice')
+    ax.hlines(ate_jk, 0, 1, ls='--', color='gray', label='Second Choice')
     
     ax.set_xlim(1.02, -0.02)
     ax.set_xlabel(f'Fraction of Initial Share for {name_j}')
-    ax.set_ylabel(f'Local Average Treatment Effect: Diversion from {name_j} to {name_k}')
+    ax.set_ylabel(f'LATE: Diversion from {name_j} to {name_k}')
     ax.legend()
     
     if savename == None:
         savename = f'wald_{j}_{k}.png'
     savefile = savepath / savename
-    plt.savefig(savefile)
+    plt.savefig(savefile, bbox_inches='tight')
     

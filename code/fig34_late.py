@@ -81,11 +81,15 @@ my_list = [26,53,113,75,8,9,19, 49]
 plot_late_single(results_blp, blp_products, market_id, 53, 113, fig_dir, 'late_53_113.pdf')
 plot_late_single(results_blp, blp_products, market_id, 53, 19, fig_dir, 'late_53_19.pdf')
 
-plot_late_single(results_blp, blp_products, market_id, 8, 53, fig_dir, 'late_8_53.pdf')
-plot_late_single(results_blp, blp_products, market_id, 8, 9, fig_dir, 'late_8_9.pdf')
-plot_late_single(results_blp, blp_products, market_id, 8, 75, fig_dir, 'late_8_75.pdf')
+plot_late_single(results_blp, blp_products, market_id, 9, 8, fig_dir, 'late_9_8.pdf')
+plot_late_single(results_blp, blp_products, market_id, 9, 75, fig_dir, 'late_9_75.pdf')
 
-plot_late_single(results_blp, blp_products, market_id, 8, 113, fig_dir, 'late_8_113.pdf')
+
+#plot_late_single(results_blp, blp_products, market_id, 8, 53, fig_dir, 'late_8_53.pdf')
+#plot_late_single(results_blp, blp_products, market_id, 8, 9, fig_dir, 'late_8_9.pdf')
+#plot_late_single(results_blp, blp_products, market_id, 8, 75, fig_dir, 'late_8_75.pdf')
+
+#plot_late_single(results_blp, blp_products, market_id, 8, 113, fig_dir, 'late_8_113.pdf')
 
 
 

@@ -1,5 +1,5 @@
 # Empirical Properties of Diversion Ratios
-Conlon and Mortimer (2020)
+Conlon and Mortimer (2021)
 A copy of the paper is here: https://chrisconlon.github.io/site/diversion.pdf
 
 ## Before running code
