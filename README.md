@@ -11,7 +11,7 @@ To download the repo simply type:
 1. Total runtime on a 2015 i7 iMac with 64GB of RAM is around 40 minutes. 
 Runtime on a 2017 MacBook Air with 8GB of RAM is around three hours.
 2. All of the datasets saved should take up less than 120 MB of drive space.
-3. The file run_all_cases.py need only be run once to populate data/dict. The file takes about 2.5 hours to run.
+3. The file run_all_cases.py need only be run once to populate data/dict. This is 90% of the computational time.
 
 ## How to run code
 Change to the directory containing this file and run "bash run_all.sh" on the terminal. The code should take approximately 1-2 hours to run in its entirety. Tables and figures will be produced as described below.
