@@ -188,5 +188,4 @@ def plot_double_mpc(results, product_df, mkt_id, j_id, k_id1, k_id2, PARAMS_INT,
     savefile = fig_dir / savename
     plt.savefig(savefile, bbox_inches='tight')  
         
-    
-
+    return (y1_sort, y2_sort)
